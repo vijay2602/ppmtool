@@ -1,0 +1,5 @@
+package com.example.ppmapi.domain;
+
+public class Project {
+
+}

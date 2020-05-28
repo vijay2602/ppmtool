@@ -1,0 +1,5 @@
+package com.example.ppmapi.service;
+
+public class MapValidationErrorService {
+
+}
