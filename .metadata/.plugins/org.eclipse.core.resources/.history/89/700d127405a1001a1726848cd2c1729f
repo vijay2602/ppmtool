@@ -150,7 +150,7 @@ public class ProjectTask {
 	public String toString() {
 		return "ProjectTask [id=" + id + ", projectSequence=" + projectSequence + ", summary=" + summary
 				+ ", acceptanceCriteria=" + acceptanceCriteria + ", status=" + status + ", priority=" + priority
-				+ ", dueDate=" + dueDate + ", projectIdentifer=" + projectIdentifier + ", create_At=" + create_At
+				+ ", dueDate=" + dueDate + ", projectIdentifer=" + projectIdentifer + ", create_At=" + create_At
 				+ ", update_At=" + update_At + "]";
 	}
 

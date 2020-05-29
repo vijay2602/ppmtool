@@ -6,11 +6,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.example.ppmapi.domain.Backlog;
-import com.example.ppmapi.domain.Project;
 import com.example.ppmapi.domain.ProjectTask;
 import com.example.ppmapi.exception.ProjectNotFoundException;
 import com.example.ppmapi.repositories.BacklogRepository;
-import com.example.ppmapi.repositories.ProjectRepository;
 import com.example.ppmapi.repositories.ProjectTaskRepository;
 
 @Service
@@ -22,8 +20,7 @@ public class ProjectTaskService {
 	@Autowired
 	private ProjectTaskRepository projectTaskRepository;
 	
-    @Autowired
-    private ProjectRepository projectRepository;
+
 	public ProjectTask addProjectTask(String projectIdentifier, ProjectTask projectTask) {
 		
 		try {
