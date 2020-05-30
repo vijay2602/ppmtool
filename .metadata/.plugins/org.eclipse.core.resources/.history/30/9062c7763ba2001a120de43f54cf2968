@@ -32,7 +32,7 @@ public class BacklogController {
 	private MapValidationErrorService mapValidationErrorService;
 	
 	@PostMapping("/{backlog_id}")
-	public ResponseEntity<?> addPTtoBacklog(@RequestBody ProjectTask projectTask, BindingResult result,@PathVariable String backlog_id){
+	public ResponseEntity<?> addPTtoBacklog( @RequestBody ProjectTask projectTask, BindingResult result,@PathVariable String backlog_id){
 		ResponseEntity<?> errorMap = mapValidationErrorService.mapValidationError(result);
 		if(errorMap!=null) return errorMap;
 		ProjectTask projectTask1 = projectTaskService.addProjectTask(backlog_id, projectTask);
@@ -51,7 +51,7 @@ public class BacklogController {
 	}
 	
 	@PatchMapping("/{backlog_id}/{pt_id}")
-	public ResponseEntity<?> updateProjectTask(@RequestBody ProjectTask projectTask, BindingResult result,
+	public ResponseEntity<?> updateProjectTask( @RequestBody ProjectTask projectTask, BindingResult result,
 			@PathVariable String backlog_id, @PathVariable String pt_id){
 		ResponseEntity<?> errorMap = mapValidationErrorService.mapValidationError(result);
 		if(errorMap!=null) return errorMap;
